@@ -9,6 +9,8 @@ TagManager:
   - Swamp
   - Warp
   - Ground
+  - JmpBtn
+  - FireBtn
   layers:
   - Default
   - TransparentFX

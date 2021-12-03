@@ -8,7 +8,7 @@ public class Abilities : MonoBehaviour
 {
     public Image warpActive;
     public Image warpInactive;
-    public int shurikenForce = 800;
+    public int shurikenForce = 2600;
     public LayerMask groundLayer;
     public Transform feet;
     public float distance = 10;
@@ -40,10 +40,10 @@ public class Abilities : MonoBehaviour
         oldPos = newPos;
         if(Input.GetButtonDown("Fire1") && Time.time > nextShuriken)
         {
-            nextShuriken = Time.time + shurikenCooldown;
-            _audioSource.PlayOneShot(shurikenSnd);
-            GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
-            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce * transform.localScale.x, 0));
+            // nextShuriken = Time.time + shurikenCooldown;
+            // _audioSource.PlayOneShot(shurikenSnd);
+            // GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+            // newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce * transform.localScale.x, 0));
 
         }
 

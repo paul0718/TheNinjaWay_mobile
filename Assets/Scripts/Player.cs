@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -25,6 +26,10 @@ public class Player : MonoBehaviour
 
     Rigidbody2D _rigidbody;
     Animator _animator;
+
+    public Joystick virtual_js;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +40,16 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        xSpeed = Input.GetAxis("Horizontal") * speed;
+        if (virtual_js.Horizontal > 0.2f){
+            xSpeed = speed;
+        }
+        else if (virtual_js.Horizontal < -0.2f){
+            xSpeed = -speed;
+        }
+        else{
+            xSpeed = 0;
+        }
+        //xSpeed = PublicVars.forward_backward * speed;
         _animator.SetFloat("Speed", Mathf.Abs(xSpeed));
         _animator.SetFloat("YSpeed", Mathf.Abs(_rigidbody.velocity.y));
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
