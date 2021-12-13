@@ -6,28 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class Abilities : MonoBehaviour
 {
+    /*
     public Image warpActive;
     public Image warpInactive;
-    public int shurikenForce = 2600;
+//    public int shurikenForce = 2600;
     public LayerMask groundLayer;
     public Transform feet;
     public float distance = 10;
     public GameObject smokerPrefab;
     public Transform smokeSpawnPos;
-    public GameObject shurikenPrefab;
+//    public GameObject shurikenPrefab;
 
-    public AudioClip shurikenSnd;
+//    public AudioClip shurikenSnd;
     public AudioClip warpSnd;
     AudioSource _audioSource;
 
     float warpCooldown = 3;
     float nextWarp;
-    float shurikenCooldown = 0.7f;
-    float nextShuriken;
+//    float shurikenCooldown = 0.7f;
+//    float nextShuriken;
     Vector2 oldPos;
     Vector2 newPos;
     Rigidbody2D _rigidbody;
     public bool facingLeft = false;
+    
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -38,14 +40,14 @@ public class Abilities : MonoBehaviour
     {
         CheckMoveDirection();
         oldPos = newPos;
-        if(Input.GetButtonDown("Fire1") && Time.time > nextShuriken)
-        {
-            // nextShuriken = Time.time + shurikenCooldown;
-            // _audioSource.PlayOneShot(shurikenSnd);
-            // GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
-            // newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce * transform.localScale.x, 0));
+       if(Input.GetButtonDown("Fire1") && Time.time > nextShuriken)
+       {
+            nextShuriken = Time.time + shurikenCooldown;
+            _audioSource.PlayOneShot(shurikenSnd);
+            GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce * transform.localScale.x, 0));
 
-        }
+       }
 
         if(Input.GetButtonDown("Fire3") && Time.time > nextWarp)
         {
@@ -80,4 +82,5 @@ public class Abilities : MonoBehaviour
             facingLeft = false;
         }
     }
+    */
 }

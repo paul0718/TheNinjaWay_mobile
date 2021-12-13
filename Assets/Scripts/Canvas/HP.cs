@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class HP : MonoBehaviour
 {
     public Slider slider;
+    public GameObject gameOverMenu;
 
     public void setDefaultHealthPoint(float healthpoint)
     {
@@ -28,4 +29,20 @@ public class HP : MonoBehaviour
     {
         slider.value -= damage;
     }
+
+    private void Start(){
+        Time.timeScale = 1;
+        gameOverMenu = GameObject.Find("Game Over");
+        gameOverMenu.SetActive(false);
+    }
+    private void Update(){
+        //if(FindObjectOfType<HP>().getHealthPoint() <= 0)
+        if(getHealthPoint() <= 0)
+        {
+            Time.timeScale = 0;
+            gameOverMenu.SetActive(true);
+        }
+    }
+
+    //Fixed deltatime, TimeScale
 }

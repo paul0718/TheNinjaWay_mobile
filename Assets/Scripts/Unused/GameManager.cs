@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    /*
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
 
@@ -31,4 +32,5 @@ public class GameManager : MonoBehaviour
             gameOverMenu.SetActive(true);
         }
     }
+    */
 }

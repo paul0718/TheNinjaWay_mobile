@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
+        hitSnd = (AudioClip)Resources.Load("Audio/Hit");
         FindObjectOfType<HP>().setDefaultHealthPoint(10);
         startPos = transform.position;
         player = GameObject.FindWithTag("Player");
@@ -86,13 +87,17 @@ public class Enemy : MonoBehaviour
         // Debug.Log("Player scale now: " + player.transform.localScale.x);
         // Debug.Log("Enemy scale now: " + this.transform.localScale.x);
         // Debug.Log("Force Added: " + 2000 * (-player.transform.localScale.x));
-        player_rb.AddForce(new Vector2(20000 * (-player.transform.localScale.x), 500));
+        //player_rb.AddForce(new Vector2(20000 * (-player.transform.localScale.x), 500));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Shuriken")){
             enemyHP -= 10;
+            _audioSource.PlayOneShot(hitSnd);
+            Destroy(other.gameObject);
+        }
+        else if(other.CompareTag("Cut")){
             _audioSource.PlayOneShot(hitSnd);
             Destroy(other.gameObject);
         }

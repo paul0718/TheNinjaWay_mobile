@@ -11,6 +11,9 @@ TagManager:
   - Ground
   - JmpBtn
   - FireBtn
+  - WarpBtn
+  - PauseBtn
+  - SlowMoBtn
   layers:
   - Default
   - TransparentFX
