@@ -14,6 +14,7 @@ TagManager:
   - WarpBtn
   - PauseBtn
   - SlowMoBtn
+  - Feet
   layers:
   - Default
   - TransparentFX

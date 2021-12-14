@@ -30,6 +30,8 @@ public class Warp_Btn : MonoBehaviour
 		WarpBtn.onClick.AddListener(TaskOnClick);
         _audioSource = GetComponent<AudioSource>();
         warpSnd = (AudioClip)Resources.Load("Audio/Warp"); // add file "slowSnd" to Resources/Audio
+        smokerPrefab = (GameObject)Resources.Load("Prefabs/Smoke");
+        smokeSpawnPos = GameObject.FindWithTag("Feet").transform;
 	}
 
     void Update(){

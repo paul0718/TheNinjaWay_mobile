@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5636150680432709306}
   m_Layer: 0
   m_Name: Feet
-  m_TagString: Untagged
+  m_TagString: Feet
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 5636150681793765217}
   - component: {fileID: 5636150681793765246}
   - component: {fileID: 5636150681793765247}
-  - component: {fileID: 5636150681793765221}
   - component: {fileID: 7849407378442835769}
   m_Layer: 0
   m_Name: Player
@@ -132,15 +131,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  jumpForce: 500
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   feet: {fileID: 5636150680432709306}
-  jumpSnd: {fileID: 8300000, guid: e074da7cfad33464699f32022f929b5c, type: 3}
   hp: {fileID: 0}
   facingLeft: 0
-  grounded: 0
+  virtual_js: {fileID: 0}
 --- !u!50 &5636150681793765217
 Rigidbody2D:
   serializedVersion: 4
@@ -284,32 +281,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5636150681793765221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5636150681793765244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f4ba2e100eae04190fe3abc7cef7a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  warpActive: {fileID: 0}
-  warpInactive: {fileID: 0}
-  shurikenForce: 2600
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  feet: {fileID: 5636150680432709306}
-  distance: 5
-  smokerPrefab: {fileID: 1018142104742205094, guid: 90153038d6cf347a395ed6d9a121e9cb, type: 3}
-  smokeSpawnPos: {fileID: 5636150680432709306}
-  shurikenPrefab: {fileID: 5149991093241534400, guid: 5e2aeba5400414955a182b013a63f005, type: 3}
-  shurikenSnd: {fileID: 8300000, guid: db37c9f9ebad24640a728369b80d3d53, type: 3}
-  warpSnd: {fileID: 8300000, guid: fafae7907217b4e1cb059e74dd1151a9, type: 3}
-  facingLeft: 0
 --- !u!95 &7849407378442835769
 Animator:
   serializedVersion: 3
