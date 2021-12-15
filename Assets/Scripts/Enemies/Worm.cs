@@ -132,6 +132,8 @@ public class Worm : MonoBehaviour
          yield return new WaitForSeconds(0.5f);
         _audioSource.PlayOneShot(hitSnd);
         FindObjectOfType<HP>().loseHealth(damage);
+        player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100);
+        //player_rb.AddForce(new Vector2(, 350));
         yield return null;
     }
 }

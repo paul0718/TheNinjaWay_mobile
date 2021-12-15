@@ -81,4 +81,9 @@ public class Player : MonoBehaviour
             facingLeft = false;
         }
     }
+
+    public void getHit(float xForce){
+        
+        _rigidbody.AddForce(new Vector2(xForce, 350));
+    }
 }
