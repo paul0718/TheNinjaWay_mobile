@@ -26,9 +26,12 @@ public class Worm : MonoBehaviour
     Vector2 character;
     float dist;
 
-    bool attackAnim = false;
+    bool isFollowing = false;
+    bool shouldFollow = false;
     
     Animator _animator;
+
+    SpriteRenderer noticed;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -39,9 +42,8 @@ public class Worm : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         player_rb = player.GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
-        _collider.enabled = false;
-
         _animator = GetComponent<Animator>();
+        noticed = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -50,21 +52,31 @@ public class Worm : MonoBehaviour
         character = transform.localScale;
         if (checkShouldFollow(dist)) {
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
-                _animator.SetTrigger("attack");
-                attack();
+                
+                StartCoroutine("bite");
             }
             else {
                 // Player is in front of the enemy.
-                if (player.transform.position.x < transform.position.x) {
-                    this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                    character.x = Math.Abs(character.x);
+                if (shouldFollow) StartCoroutine("follow");
+                
+                if (isFollowing) {
+                    if (player.transform.position.x < transform.position.x) {
+                        this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+                        character.x = Math.Abs(character.x);
+                    }
+                    if (player.transform.position.x > transform.position.x) {
+                        this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
+                        character.x = -Math.Abs(character.x);
+                    }
                 }
-                // Player is behind the enemy.
-                if (player.transform.position.x > transform.position.x) {
-                    this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                    character.x = -Math.Abs(character.x);
-                }
+                
+                
             }
+        } else {
+            _animator.SetBool("follow", false);
+            _collider.enabled = true;
+            isFollowing = false;
+            shouldFollow = true;
         }
         // transform.localScale = character;
         if(enemyHP <= 0)
@@ -88,15 +100,16 @@ public class Worm : MonoBehaviour
         return false;
     }
 
-    private void attack()
-    {
-        nextAttack = Time.time + attackCooldown;
-        _audioSource.PlayOneShot(hitSnd);
-        FindObjectOfType<HP>().loseHealth(damage);
-        // Debug.Log("Player scale now: " + player.transform.localScale.x);
-        // Debug.Log("Enemy scale now: " + this.transform.localScale.x);
-        // Debug.Log("Force Added: " + 2000 * (-player.transform.localScale.x));
-        //player_rb.AddForce(new Vector2(20000 * (-player.transform.localScale.x), 500));
+    IEnumerator follow()
+    {   
+        shouldFollow = false;
+        noticed.enabled = true;
+        yield return new WaitForSeconds(1f);
+        _collider.enabled = false;
+        _animator.SetBool("follow", true);
+        isFollowing = true;
+        noticed.enabled = false;
+        yield return null;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -111,4 +124,15 @@ public class Worm : MonoBehaviour
         //    Destroy(other.gameObject);
         //}
     }
+
+    IEnumerator bite() {
+        _animator.SetTrigger("attack");
+       
+        nextAttack = Time.time + attackCooldown;
+         yield return new WaitForSeconds(0.5f);
+        _audioSource.PlayOneShot(hitSnd);
+        FindObjectOfType<HP>().loseHealth(damage);
+        yield return null;
+    }
 }
+
