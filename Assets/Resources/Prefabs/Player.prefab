@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 5636150681793765246}
   - component: {fileID: 5636150681793765247}
   - component: {fileID: 7849407378442835769}
+  - component: {fileID: 1801760586}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -125,7 +126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5636150681793765244}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6950a3f8ed1b460c9a5690334357521, type: 3}
   m_Name: 
@@ -300,3 +301,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1801760586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636150681793765244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218e4fe6707c12647b2f74ea9861b3a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  jumpForce: 500
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  feet: {fileID: 5636150680432709306}
+  hp: {fileID: 0}
+  facingLeft: 0
+  grounded: 0

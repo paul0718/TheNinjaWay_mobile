@@ -524,6 +524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 120427534340280911, guid: aa69a5add8ae67d438bcb349eed91cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa69a5add8ae67d438bcb349eed91cb7, type: 3}
 --- !u!224 &423860040 stripped
@@ -1078,7 +1082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1411380632640092702, guid: 620a02c4429244646ab32c9b676669a7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1411380632640092702, guid: 620a02c4429244646ab32c9b676669a7, type: 3}
       propertyPath: m_LocalScale.y
@@ -1133,13 +1137,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1801760586, guid: cec8045148315f147bce35d19f76155d, type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 1529911924}
     - target: {fileID: 5636150681793765216, guid: cec8045148315f147bce35d19f76155d, type: 3}
       propertyPath: virtual_js
       value: 
       objectReference: {fileID: 423860041}
     - target: {fileID: 5636150681793765218, guid: cec8045148315f147bce35d19f76155d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5636150681793765218, guid: cec8045148315f147bce35d19f76155d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1396,6 +1404,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5633852731250284354, guid: 51549c99682c3b2409cac0f6a039f619, type: 3}
   m_PrefabInstance: {fileID: 1470682958}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1529911924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1213853965626347203, guid: 3def2d6330662eb4585aa4cfc3984f53, type: 3}
+  m_PrefabInstance: {fileID: 1196558938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 661f3d590dab0498fac963c1d6931038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1554754330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1409,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2461335243515729109, guid: e09f93a25c59eda428f57a7d0992f385, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2461335243515729109, guid: e09f93a25c59eda428f57a7d0992f385, type: 3}
       propertyPath: m_LocalScale.x
