@@ -134,21 +134,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -309,21 +313,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -503,6 +511,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 33.297905
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (12)
@@ -525,21 +537,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -670,21 +686,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -933,6 +953,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (5)
@@ -1081,6 +1105,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (6)
@@ -1212,21 +1240,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1356,21 +1388,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,21 +1696,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1887,21 +1927,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2108,7 +2152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0.000000022305606, z: 0, w: 1}
-  m_LocalPosition: {x: -135.98535, y: 1.76, z: -10}
+  m_LocalPosition: {x: -134.79053, y: 1.76, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791339158}
@@ -3027,21 +3071,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3096,21 +3144,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3165,21 +3217,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3311,6 +3367,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 30.894186
       objectReference: {fileID: 0}
+    - target: {fileID: 4282276127056237917, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8baa19b06b299f468ebd604cd9e6844, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
 --- !u!1001 &704609002
@@ -3380,6 +3440,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 25.667019
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland
@@ -3463,6 +3527,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 33.297905
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (11)
@@ -3761,21 +3829,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3912,6 +3984,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 38.434315
       objectReference: {fileID: 0}
+    - target: {fileID: 4282276127056237917, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8baa19b06b299f468ebd604cd9e6844, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
 --- !u!4 &843727537 stripped
@@ -3935,21 +4011,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4009,21 +4089,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4213,6 +4297,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (4)
@@ -4502,21 +4590,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4673,21 +4765,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4835,6 +4931,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 12.847861
       objectReference: {fileID: 0}
+    - target: {fileID: 4282276127056237917, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8baa19b06b299f468ebd604cd9e6844, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
 --- !u!4 &1197317452 stripped
@@ -5025,6 +5125,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 12.903276
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (7)
@@ -5042,21 +5146,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5116,21 +5224,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5246,6 +5358,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (9)
@@ -5347,21 +5463,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5421,21 +5541,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5505,21 +5629,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5614,21 +5742,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5688,21 +5820,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5757,21 +5893,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5831,21 +5971,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5956,6 +6100,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 12.834074
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (14)
@@ -6147,6 +6295,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 7.885545
       objectReference: {fileID: 0}
+    - target: {fileID: 4282276127056237917, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8baa19b06b299f468ebd604cd9e6844, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
 --- !u!1001 &1608901765
@@ -6216,6 +6368,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (1)
@@ -6243,21 +6399,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6378,6 +6538,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (8)
@@ -6857,21 +7021,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6987,6 +7155,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (2)
@@ -7004,21 +7176,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7073,21 +7249,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7203,6 +7383,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 10.328721
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (13)
@@ -7220,21 +7404,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7289,21 +7477,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: pedal (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4805031492372513472, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe998531903534b8e2834092bcfd53, type: 3}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4913228606865461152, guid: c062ad4a345a8ea43b8ec2e10850e648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7514,6 +7706,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 28.227707
       objectReference: {fileID: 0}
+    - target: {fileID: 4282276127056237917, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8baa19b06b299f468ebd604cd9e6844, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 202c2fab3858949d0a0fff8b7556427f, type: 3}
 --- !u!1001 &2003249390
@@ -7879,6 +8075,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (3)
@@ -8123,6 +8323,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 7.712822
       objectReference: {fileID: 0}
+    - target: {fileID: 5748565103768238583, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c0b38c1c015162e4ab4c3e8b826978e6, type: 3}
     - target: {fileID: 8490798078892160221, guid: cdfdc8582de8e4a2b9a560580496068b, type: 3}
       propertyPath: m_Name
       value: ground_grassland (10)

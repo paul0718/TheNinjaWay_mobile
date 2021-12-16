@@ -16,6 +16,7 @@ TagManager:
   - SlowMoBtn
   - Feet
   - AttackPt
+  - Liquid
   layers:
   - Default
   - TransparentFX

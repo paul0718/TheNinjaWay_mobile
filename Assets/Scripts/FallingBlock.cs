@@ -22,7 +22,7 @@ public class FallingBlock : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Liquid"))
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 
