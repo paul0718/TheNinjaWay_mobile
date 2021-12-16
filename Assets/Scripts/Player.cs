@@ -83,7 +83,12 @@ public class Player : MonoBehaviour
     }
 
     public void getHit(float xForce){
-        
         _rigidbody.AddForce(new Vector2(xForce, 350));
+    }
+
+    IEnumerator slowDown() {
+        speed = 3;
+        yield return new WaitForSeconds(3f);
+        speed = 6;
     }
 }
