@@ -5,7 +5,8 @@ public class Warp_Btn : MonoBehaviour
 {
     [SerializeField]
 	Button WarpBtn;
-    Rigidbody2D player_rigid;
+    GameObject player;
+    //Rigidbody2D player_rigid;
 
 
     public Image warpActive;
@@ -22,10 +23,11 @@ public class Warp_Btn : MonoBehaviour
 
     // Vector2 oldPos;
     // Vector2 newPos;
-    public bool facingLeft = false;
+    //public bool PublicVars.facingLeft = false;
 
 	void Start () {
-        player_rigid = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+        player = GameObject.FindWithTag("Player");
+        //player_rigid = player.GetComponent<Rigidbody2D>();
 		WarpBtn = GameObject.FindWithTag("WarpBtn").GetComponent<Button>();
 		WarpBtn.onClick.AddListener(TaskOnClick);
         _audioSource = GetComponent<AudioSource>();
@@ -35,7 +37,7 @@ public class Warp_Btn : MonoBehaviour
 	}
 
     void Update(){
-        CheckMoveDirection();
+        // CheckMoveDirection();
         if(Time.time > nextWarp)
         {
             warpActive.gameObject.SetActive(true);
@@ -53,11 +55,11 @@ public class Warp_Btn : MonoBehaviour
             nextWarp = Time.time + warpCooldown;
             _audioSource.PlayOneShot(warpSnd);
             GameObject newSmoke = Instantiate(smokerPrefab, smokeSpawnPos.position, Quaternion.identity);
-            if(facingLeft){
-                player_rigid.transform.position = new Vector2(player_rigid.transform.position.x-distance,player_rigid.transform.position.y); 
+            if(PublicVars.facingLeft){
+                player.transform.position = new Vector2(player.transform.position.x-distance,player.transform.position.y); 
             }
             else{
-                player_rigid.transform.position = new Vector2(player_rigid.transform.position.x+distance,player_rigid.transform.position.y);      
+                player.transform.position = new Vector2(player.transform.position.x+distance,player.transform.position.y);      
             }
             GameObject newSmoke2 = Instantiate(smokerPrefab, smokeSpawnPos.position, Quaternion.identity);
         }
@@ -66,15 +68,15 @@ public class Warp_Btn : MonoBehaviour
         // newPos = transform.position;
 	}
 
-    void CheckMoveDirection()
-    {
-        if (player_rigid.transform.localScale.x < 0) {
-            facingLeft = true;
-        }
-        else if (player_rigid.transform.localScale.x > 0){
-            facingLeft = false;
-        }
-    }
+    // void CheckMoveDirection()
+    // {
+    //     if (player.transform.localScale.x < 0) {
+    //         PublicVars.facingLeft = true;
+    //     }
+    //     else if (player.transform.localScale.x > 0){
+    //         PublicVars.facingLeft = false;
+    //     }
+    // }
 
 }
 

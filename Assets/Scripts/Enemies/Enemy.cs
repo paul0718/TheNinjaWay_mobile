@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     Rigidbody2D _rigidbody;
     AudioSource _audioSource;
     public AudioClip hitSnd;
-    Vector2 character;
+    Vector2 enemy_localscale;
     float dist;
 
     void Start()
@@ -39,44 +39,50 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         dist = Vector2.Distance(player.transform.position, transform.position);
-        character = transform.localScale;
+        enemy_localscale = transform.localScale;
         if (checkShouldFollow(dist)) {
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
                 attack();
             }
             else {
-                // Player is in front of the enemy.
-                if (player.transform.position.x < transform.position.x) {
-                    this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                    character.x = Math.Abs(character.x);
-                }
-                // Player is behind the enemy.
-                if (player.transform.position.x > transform.position.x) {
-                    this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                    character.x = -Math.Abs(character.x);
-                }
+                follow();
             }
         }
-        // transform.localScale = character;
+        // transform.localScale = enemy_localscale;
         if(enemyHP <= 0)
         {
-            Destroy(gameObject);
+            die();
         }
 
     }
 
+
+
     // Return true if the enemy should chase the player.
-    bool checkShouldFollow(float dist)
+    private bool checkShouldFollow(float dist)
     {
         if (dist < followRadius) {  return true; }
         return false;
     }
 
     // Return true if the enemy should attack the player.
-    bool checkShouldAttack(float dist)
+    private bool checkShouldAttack(float dist)
     {
         if (dist < attackRadius) { return true; }
         return false;
+    }
+
+    private void follow(){
+        // Player is in front of the enemy.
+        if (player.transform.position.x < transform.position.x) {
+            this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
+            enemy_localscale.x = Math.Abs(enemy_localscale.x);
+        }
+        // Player is behind the enemy.
+        if (player.transform.position.x > transform.position.x) {
+            this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
+            enemy_localscale.x = -Math.Abs(enemy_localscale.x);
+        }
     }
 
     private void attack()
@@ -90,16 +96,27 @@ public class Enemy : MonoBehaviour
         //player_rb.AddForce(new Vector2(20000 * (-player.transform.localScale.x), 500));
     }
 
+    private void die(){
+        //play die animation
+        //play die audio
+        Destroy(gameObject);
+    }
+
+    public void receiveDamage(int damage){
+        enemyHP -= damage;
+        _audioSource.PlayOneShot(hitSnd);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Shuriken")){
-            enemyHP -= 10;
-            _audioSource.PlayOneShot(hitSnd);
+            //enemyHP -= 10;
+            receiveDamage(10);
             Destroy(other.gameObject);
         }
-        else if(other.CompareTag("Cut")){
-            _audioSource.PlayOneShot(hitSnd);
-            Destroy(other.gameObject);
-        }
+        // else if(other.CompareTag("Cut")){
+        //     Destroy(other.gameObject);
+        //     die();
+        // }
     }
 }

@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
 
     public HP hp;
 
-    public bool facingLeft = false;
+    //public bool PublicVars.facingLeft = false;
 
     Rigidbody2D _rigidbody;
     Animator _animator;
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         _animator.SetFloat("Speed", Mathf.Abs(xSpeed));
         _animator.SetFloat("YSpeed", Mathf.Abs(_rigidbody.velocity.y));
         _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
-        if((facingLeft == false && transform.localScale.x < 0) || (facingLeft == true && transform.localScale.x > 0) )
+        if((PublicVars.facingLeft == false && transform.localScale.x < 0) || (PublicVars.facingLeft == true && transform.localScale.x > 0) )
         {
             transform.localScale *= new Vector2(-1, 1);
         }
@@ -76,14 +76,16 @@ public class Player : MonoBehaviour
     void CheckMoveDirection()
     {
         if (oldPos.x > newPos.x){
-            facingLeft = true;
+            PublicVars.facingLeft = true;
         } else if (oldPos.x < newPos.x){
-            facingLeft = false;
+            PublicVars.facingLeft = false;
         }
     }
 
     public void getHit(float xForce){
-        _rigidbody.AddForce(new Vector2(xForce, 350));
+        // Debug.Log(_rigidbody);
+        //_rigidbody.AddForce(new Vector2(xForce, 350)); // somehow this wasn't working, it says _rigidbody is null when called from other scripts, wierd
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, 350));
     }
 
     IEnumerator slowDown() {

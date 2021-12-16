@@ -23,7 +23,7 @@ public class Worm : MonoBehaviour
     Rigidbody2D _rigidbody;
     AudioSource _audioSource;
     public AudioClip hitSnd;
-    Vector2 character;
+    Vector2 enemy_localscale;
     float dist;
 
     bool isFollowing = false;
@@ -49,10 +49,9 @@ public class Worm : MonoBehaviour
     void FixedUpdate()
     {
         dist = Vector2.Distance(player.transform.position, transform.position);
-        character = transform.localScale;
+        enemy_localscale = transform.localScale;
         if (checkShouldFollow(dist)) {
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
-                
                 StartCoroutine("bite");
             }
             else {
@@ -62,15 +61,13 @@ public class Worm : MonoBehaviour
                 if (isFollowing) {
                     if (player.transform.position.x < transform.position.x) {
                         this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                        character.x = Math.Abs(character.x);
+                        enemy_localscale.x = Math.Abs(enemy_localscale.x);
                     }
                     if (player.transform.position.x > transform.position.x) {
                         this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                        character.x = -Math.Abs(character.x);
+                        enemy_localscale.x = -Math.Abs(enemy_localscale.x);
                     }
-                }
-                
-                
+                } 
             }
         } else {
             _animator.SetBool("follow", false);
@@ -78,10 +75,10 @@ public class Worm : MonoBehaviour
             isFollowing = false;
             shouldFollow = true;
         }
-        // transform.localScale = character;
+        // transform.localScale = enemy_localscale;
         if(enemyHP <= 0)
         {
-            Destroy(gameObject);
+            die();
         }
 
     }
@@ -105,24 +102,11 @@ public class Worm : MonoBehaviour
         shouldFollow = false;
         noticed.enabled = true;
         yield return new WaitForSeconds(1f);
-        _collider.enabled = false;
+        _collider.enabled = false; // this is now preventing the melee script to work, we need a collider for that, maybe the collider to Trigger?
         _animator.SetBool("follow", true);
         isFollowing = true;
         noticed.enabled = false;
         yield return null;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Shuriken")){
-            enemyHP -= 10;
-            _audioSource.PlayOneShot(hitSnd);
-            Destroy(other.gameObject);
-        }
-        //else if(other.CompareTag("Cut")){
-        //    _audioSource.PlayOneShot(hitSnd);
-        //    Destroy(other.gameObject);
-        //}
     }
 
     IEnumerator bite() {
@@ -136,5 +120,31 @@ public class Worm : MonoBehaviour
         //player_rb.AddForce(new Vector2(, 350));
         yield return null;
     }
+
+    private void die(){
+        //play die animation
+        //play die audio
+        Destroy(gameObject);
+    }
+
+    public void receiveDamage(int damage){
+        enemyHP -= damage;
+        _audioSource.PlayOneShot(hitSnd);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Shuriken")){
+            receiveDamage(10);
+            Destroy(other.gameObject);
+        }
+        // else if(other.CompareTag("Cut")){
+        //    _audioSource.PlayOneShot(hitSnd);
+        //    Destroy(other.gameObject);
+        //    Destroy(gameObject);
+        // }
+    }
+
+    
 }
 
