@@ -24,11 +24,12 @@ public class Liquid : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player") {
             other.GetComponent<Player>().StartCoroutine("slowDown");
-            if (isLava){
-                other.GetComponent<Player>().getHit(1f);
-                FindObjectOfType<HP>().loseHealth(0.5f);
-                _audioSource.PlayOneShot(hitSnd);
-            }
+            // if (isLava){
+            other.GetComponent<Player>().getHit(1f);
+            FindObjectOfType<HP>().setHealthPoint(0.0f);
+            _audioSource.PlayOneShot(hitSnd);
+
+            // }
         }
     }
 }

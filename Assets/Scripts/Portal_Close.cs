@@ -10,7 +10,7 @@ public class Portal_Close : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        portal = GameObject.Find("next_level");
+        //portal = GameObject.Find("next_level");
         portal.SetActive(false);
     }
 
