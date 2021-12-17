@@ -6,8 +6,6 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
     public int speed = 1;
-    public float returnSpeed = 2.5f;
-    public int damage = 2;
     public int enemyHP = 100;
     public float followRadius = 10.0f;
     public float attackRadius = 7.0f;
@@ -87,14 +85,6 @@ public class Boss : MonoBehaviour
         newHook.GetComponent<Rigidbody2D>().AddForce(new Vector2(hookForce * (-transform.localScale.x), 0));
 
         nextAttack = Time.time + attackCooldown;
-        // _audioSource.PlayOneShot(hitSnd);//?
-        // FindObjectOfType<HP>().loseHealth(damage);
-        // Debug.Log("Player scale now: " + player.transform.localScale.x);
-        // Debug.Log("Enemy scale now: " + this.transform.localScale.x);
-        // Debug.Log("Force Added: " + 2000 * (-player.transform.localScale.x));
-        
-        // player_rb.AddForce(-player_rb.velocity);
-        // player_rb.AddForce(new Vector2(2000 * (-player.transform.localScale.x), 500));
     }
 
     private void OnTriggerEnter2D(Collider2D other)

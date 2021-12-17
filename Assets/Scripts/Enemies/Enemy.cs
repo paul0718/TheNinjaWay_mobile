@@ -87,13 +87,13 @@ public class Enemy : MonoBehaviour
 
     private void attack()
     {
+        
         nextAttack = Time.time + attackCooldown;
         _audioSource.PlayOneShot(hitSnd);
         FindObjectOfType<HP>().loseHealth(damage);
-        // Debug.Log("Player scale now: " + player.transform.localScale.x);
-        // Debug.Log("Enemy scale now: " + this.transform.localScale.x);
-        // Debug.Log("Force Added: " + 2000 * (-player.transform.localScale.x));
-        //player_rb.AddForce(new Vector2(20000 * (-player.transform.localScale.x), 500));
+        StartCoroutine(player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100));   
+        //player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*1000);
+        
     }
 
     private void die(){
@@ -114,6 +114,9 @@ public class Enemy : MonoBehaviour
             receiveDamage(10);
             Destroy(other.gameObject);
         }
+        // else if(other.CompareTag("Player")){
+        //     StartCoroutine(player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100));
+        // }
         // else if(other.CompareTag("Cut")){
         //     Destroy(other.gameObject);
         //     die();

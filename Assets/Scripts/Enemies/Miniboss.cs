@@ -3,18 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Worm : MonoBehaviour
+public class Miniboss : MonoBehaviour
 {
     public int speed = 3;
-    public float returnSpeed = 2.5f;
-    public int damage = 1;
-    public int enemyHP = 20;
-    public float followRadius = 3.0f;
-    public float attackRadius = 1.5f;
+    public int enemyHP = 100;
+    public float followRadius = 10.0f;
+    public float attackRadius = 10.0f;
 
     GameObject player;
     Rigidbody2D player_rb;
-    Collider2D _collider;
+    //Collider2D _collider;
     float attackCooldown = 3;
     float nextAttack;
 
@@ -28,22 +26,36 @@ public class Worm : MonoBehaviour
 
     bool isFollowing = false;
     bool shouldFollow = false;
+
+    public GameObject shurikenPrefab;
+    public AudioClip shurikenSnd; 
+    public int shurikenForce = 2600;
+    public GameObject smokerPrefab;
+    public AudioClip warpSnd;
+    public int distance = 10;
+    float warpCooldown = 5;
+    float nextWarp;
     
     Animator _animator;
 
-    SpriteRenderer noticed;
+    //SpriteRenderer noticed;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         hitSnd = (AudioClip)Resources.Load("Audio/Hit");
-        FindObjectOfType<HP>().setDefaultHealthPoint(10);
+        //FindObjectOfType<HP>().setDefaultHealthPoint(10);
         startPos = transform.position;
         player = GameObject.FindWithTag("Player");
         player_rb = player.GetComponent<Rigidbody2D>();
-        _collider = GetComponent<Collider2D>();
+        //_collider = GetComponent<Collider2D>();
         _animator = GetComponent<Animator>();
-        noticed = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        //noticed = transform.GetChild(0).GetComponent<SpriteRenderer>();
+		shurikenSnd = (AudioClip)Resources.Load("Audio/ShurikenSnd");
+		shurikenPrefab = (GameObject)Resources.Load("Prefabs/EnemyShuriken");
+        warpSnd = (AudioClip)Resources.Load("Audio/Warp");
+        smokerPrefab = (GameObject)Resources.Load("Prefabs/Smoke");
+        
     }
 
     void FixedUpdate()
@@ -51,8 +63,12 @@ public class Worm : MonoBehaviour
         dist = Vector2.Distance(player.transform.position, transform.position);
         enemy_localscale = transform.localScale;
         if (checkShouldFollow(dist)) {
+            //StartCoroutine("teleport");
+            if (Time.time > nextWarp) {
+                tp_func();
+            }
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
-                StartCoroutine("bite");
+                StartCoroutine("attack");
             }
             else {
                 // Player is in front of the enemy.
@@ -70,8 +86,8 @@ public class Worm : MonoBehaviour
                 } 
             }
         } else {
-            _animator.SetBool("follow", false);
-            _collider.enabled = true;
+            _animator.SetBool("Following", false);
+            //_collider.enabled = true;
             isFollowing = false;
             shouldFollow = true;
         }
@@ -100,25 +116,30 @@ public class Worm : MonoBehaviour
     IEnumerator follow()
     {   
         shouldFollow = false;
-        noticed.enabled = true;
-        yield return new WaitForSeconds(1f);
-        _collider.enabled = false; // this is now preventing the melee script to work, we need a collider for that, maybe the collider to Trigger?
-        _animator.SetBool("follow", true);
+        //noticed.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        //_collider.enabled = false; 
+        _animator.SetBool("Following", true);
         isFollowing = true;
-        noticed.enabled = false;
+        //noticed.enabled = false;
         yield return null;
     }
 
-    IEnumerator bite() {
-        _animator.SetTrigger("attack");
+
+    IEnumerator attack() {
+        //_animator.SetTrigger("attack");
+        _audioSource.PlayOneShot(shurikenSnd);
+        GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+        if (player.transform.position.x < transform.position.x) {
+            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(-shurikenForce, 0));
+        }
+        else{
+            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce, 0));
+        }
+        //newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce * transform.localScale.x, 0));
        
         nextAttack = Time.time + attackCooldown;
         yield return new WaitForSeconds(0.5f);
-        _audioSource.PlayOneShot(hitSnd);
-        //player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100);
-        StartCoroutine(player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100));
-        FindObjectOfType<HP>().loseHealth(damage);
-        //player_rb.AddForce(new Vector2(, 350));
         yield return null;
     }
 
@@ -131,6 +152,19 @@ public class Worm : MonoBehaviour
     public void receiveDamage(int damage){
         enemyHP -= damage;
         _audioSource.PlayOneShot(hitSnd);
+    }
+
+    private void tp_func(){
+        _audioSource.PlayOneShot(warpSnd);
+        GameObject newSmoke = Instantiate(smokerPrefab, transform.position, Quaternion.identity);
+        if(player.transform.position.x < transform.position.x){
+            transform.position = new Vector2(transform.position.x-distance,transform.position.y); 
+        }
+        else{
+            transform.position = new Vector2(transform.position.x+distance,transform.position.y);      
+        }
+        GameObject newSmoke2 = Instantiate(smokerPrefab, transform.position, Quaternion.identity);
+        nextWarp = Time.time + warpCooldown;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

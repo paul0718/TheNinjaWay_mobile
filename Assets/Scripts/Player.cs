@@ -48,7 +48,9 @@ public class Player : MonoBehaviour
         }
         _animator.SetFloat("Speed", Mathf.Abs(xSpeed));
         _animator.SetFloat("YSpeed", Mathf.Abs(_rigidbody.velocity.y));
-        _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
+        if (!PublicVars.knockback){
+            _rigidbody.velocity = new Vector2(xSpeed, _rigidbody.velocity.y);
+        }
         if((PublicVars.facingLeft == false && transform.localScale.x < 0) || (PublicVars.facingLeft == true && transform.localScale.x > 0) )
         {
             transform.localScale *= new Vector2(-1, 1);
@@ -83,10 +85,18 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void getHit(float xForce){
+    public IEnumerator getHit(float xForce){
         // Debug.Log(_rigidbody);
-        //_rigidbody.AddForce(new Vector2(xForce, 350)); // somehow this wasn't working, it says _rigidbody is null when called from other scripts, wierd
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, 350));
+        //_rigidbody.AddForce(new Vector2(xForce, 350)); 
+        PublicVars.knockback = true;
+        float timer = 0;
+        while (timer < 0.5){
+            timer += Time.deltaTime;
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, 10));
+        }
+        PublicVars.knockback = false;
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        yield return 0;
     }
 
     IEnumerator slowDown() {
