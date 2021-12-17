@@ -8,7 +8,11 @@ public class TitleScreen : MonoBehaviour
     // Start is called before the first frame update
     public void StartGame()
     {
-        SceneManager.LoadScene("1-1");
+        SceneManager.LoadScene("0");
+    }
+
+    public void LoadLevel(){
+        SceneManager.LoadScene("LvlLoader");
     }
 
     public void QuitGame()
