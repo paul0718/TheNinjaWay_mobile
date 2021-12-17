@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class Warp_Btn : MonoBehaviour
 {
@@ -37,6 +39,15 @@ public class Warp_Btn : MonoBehaviour
 
         warpActive = GameObject.Find("WarpActive");
         warpInactive = GameObject.Find("WarpInactive");
+        if (SceneManager.GetActiveScene().name[0] == '4' ||
+            SceneManager.GetActiveScene().name[0] == '5' ||
+            SceneManager.GetActiveScene().name[0] == '6')
+        {
+            WarpBtn.interactable = true;
+        }
+        else{
+            WarpBtn.interactable = false;
+        }
 	}
 
     void Update(){
