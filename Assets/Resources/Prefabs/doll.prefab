@@ -124,7 +124,7 @@ MonoBehaviour:
   followRadius: 20
   attackRadius: 11
   shootSnd: {fileID: 0}
-  hookPrefab: {fileID: 0}
+  hookPrefab: {fileID: 3419015387103202460, guid: ec49af8c12be4334d8ec2deacf4579e6, type: 3}
   hookForce: 800
 --- !u!60 &622007406509052420
 PolygonCollider2D:

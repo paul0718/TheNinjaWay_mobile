@@ -62,7 +62,7 @@ public class Miniboss : MonoBehaviour
                 tp_func();
             }
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
-                StartCoroutine("attack");
+                //StartCoroutine("attack");
             }
             else {
                 if (shouldFollow) StartCoroutine("follow");
