@@ -60,13 +60,13 @@ public class Worm : MonoBehaviour
                 if (isFollowing) {
                     if (player.transform.position.x < transform.position.x) {
                         this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                        if (enemy_localscale.x < 1){
+                        if (enemy_localscale.x < 0){
                             transform.localScale *= new Vector2(-1, 1);
                         }
                     }
                     if (player.transform.position.x > transform.position.x) {
                         this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                        if (enemy_localscale.x > 1){
+                        if (enemy_localscale.x >= 0){
                             transform.localScale *= new Vector2(-1, 1);
                         }
                     }

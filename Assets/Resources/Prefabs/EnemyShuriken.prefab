@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 166582999420216546}
   - component: {fileID: 8225320138068589271}
   - component: {fileID: 4163697037543336048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyShuriken
   m_TagString: Shuriken
   m_Icon: {fileID: 0}

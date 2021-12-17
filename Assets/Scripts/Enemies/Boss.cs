@@ -47,14 +47,14 @@ public class Boss : MonoBehaviour
                 // Player is in front of the enemy.
                 if (player.transform.position.x < transform.position.x) {
                     this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                    if (transform.localScale.x < 1){
+                    if (transform.localScale.x < 0){
                             transform.localScale *= new Vector2(-1, 1);
                         }
                 }
                 // Player is behind the enemy.
                 if (player.transform.position.x > transform.position.x) {
                     this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                    if (transform.localScale.x > 1){
+                    if (transform.localScale.x >= 0){
                             transform.localScale *= new Vector2(-1, 1);
                         }
                 }
