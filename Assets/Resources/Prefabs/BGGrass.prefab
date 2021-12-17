@@ -447,7 +447,7 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.4
+  parallaxEffect: 0.15
 --- !u!1 &5723606284431535491
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.2
 --- !u!1 &5723606284913925142
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.2
+  parallaxEffect: 0.05
 --- !u!1 &5723606284968171299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.6
+  parallaxEffect: 0.25
 --- !u!1 &5723606285018649906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.8
+  parallaxEffect: 0.3
 --- !u!1 &5723606285270329747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,4 +1891,4 @@ MonoBehaviour:
   length: 0
   startpos: 0
   player: {fileID: 0}
-  parallaxEffect: 0.3
+  parallaxEffect: 0.1
