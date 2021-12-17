@@ -15,4 +15,8 @@ public class TitleScreen : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void LoadLevel(){
+        SceneManager.LoadScene("LvlLoader");
+    }
 }
