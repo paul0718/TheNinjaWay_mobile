@@ -42,7 +42,7 @@ public class FallSpike : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")){
-            FindObjectOfType<HP>().loseHealth(10.0f);
+            FindObjectOfType<HP>().loseHealth(1.0f);
             _audioSource.PlayOneShot(hitSnd);
         }
         else if (other.CompareTag("Ground")){

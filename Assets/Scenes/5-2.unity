@@ -3202,7 +3202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0.000000022305606, z: 0, w: 1}
-  m_LocalPosition: {x: -128.57988, y: 0.41, z: -10}
+  m_LocalPosition: {x: -129.45857, y: 0.41, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791339158}
@@ -9098,9 +9098,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5610733170331200181, guid: 4d5e1b29be452b242997d6b8dd590675, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610733170331200181, guid: 4d5e1b29be452b242997d6b8dd590675, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610733170331200181, guid: 4d5e1b29be452b242997d6b8dd590675, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5610733170331200182, guid: 4d5e1b29be452b242997d6b8dd590675, type: 3}
       propertyPath: levelToLoad
-      value: 2-1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610733170331200183, guid: 4d5e1b29be452b242997d6b8dd590675, type: 3}
       propertyPath: m_Name
