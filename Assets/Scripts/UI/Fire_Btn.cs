@@ -76,9 +76,17 @@ public class Fire_Btn : MonoBehaviour
 					//Debug.Log("found slime");
 					enemyscript.receiveDamage(10);
 				}
-				else if (enemy.TryGetComponent(out Worm wormscript)){
-					Debug.Log("found worm");
-					wormscript.receiveDamage(10);
+				else if (enemy.TryGetComponent(out Boss slimescript)){
+					//Debug.Log("found worm");
+					slimescript.receiveDamage(10);
+				}
+				else if (enemy.TryGetComponent(out Miniboss minicript)){
+					//Debug.Log("found worm");
+					minicript.receiveDamage(10);
+				}
+				else if (enemy.TryGetComponent(out FinalBoss bossscript)){
+					//Debug.Log("found worm");
+					bossscript.receiveDamage(10);
 				}
 				
         	}

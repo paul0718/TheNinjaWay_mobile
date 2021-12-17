@@ -25,6 +25,7 @@ public class Boss : MonoBehaviour
 
     public GameObject hookPrefab;
     public int hookForce = 800;
+    public AudioClip hitSnd;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class Boss : MonoBehaviour
         // startPos = transform.position;
         player = GameObject.FindWithTag("Player");
         player_rb = player.GetComponent<Rigidbody2D>();
+        hitSnd = (AudioClip)Resources.Load("Audio/Hit");
     }
 
     void FixedUpdate()
@@ -89,6 +91,10 @@ public class Boss : MonoBehaviour
         newHook.GetComponent<Rigidbody2D>().AddForce(new Vector2(hookForce * (-transform.localScale.x), 0));
 
         nextAttack = Time.time + attackCooldown;
+    }
+    public void receiveDamage(int damage){
+        enemyHP -= damage;
+        _audioSource.PlayOneShot(hitSnd);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

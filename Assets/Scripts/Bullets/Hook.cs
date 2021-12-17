@@ -37,7 +37,7 @@ public class Hook : MonoBehaviour
     {
         if(other.CompareTag("Player")){
             // _audioSource.PlayOneShot(hitSnd);
-            FindObjectOfType<HP>().loseHealth(3.0f);
+            FindObjectOfType<HP>().loseHealth(1.0f);
             Destroy(gameObject);
         }
     }
