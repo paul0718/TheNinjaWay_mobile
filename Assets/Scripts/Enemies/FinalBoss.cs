@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Miniboss : MonoBehaviour
+public class FinalBoss : MonoBehaviour
 {
-    public int speed = 3;
-    public int enemyHP = 100;
+    public int speed = 2;
+    public int enemyHP = 200;
     public float followRadius = 10.0f;
     public float attackRadius = 10.0f;
 
     GameObject player;
     Rigidbody2D player_rb;
+    //Collider2D _collider;
     float attackCooldown = 3;
     float nextAttack;
 
@@ -28,24 +29,28 @@ public class Miniboss : MonoBehaviour
 
     public GameObject shurikenPrefab;
     public AudioClip shurikenSnd; 
-    public int shurikenForce = 2600;
+    public int shurikenForce = 1000;
     public GameObject smokerPrefab;
     public AudioClip warpSnd;
-    public int distance = 10;
+    public int distance = 5;
     float warpCooldown = 5;
     float nextWarp;
     
-    Animator _animator;
+    //Animator _animator;
 
+    //SpriteRenderer noticed;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         hitSnd = (AudioClip)Resources.Load("Audio/Hit");
+        //FindObjectOfType<HP>().setDefaultHealthPoint(10);
         startPos = transform.position;
         player = GameObject.FindWithTag("Player");
         player_rb = player.GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
+        //_collider = GetComponent<Collider2D>();
+        //_animator = GetComponent<Animator>();
+        //noticed = transform.GetChild(0).GetComponent<SpriteRenderer>();
 		shurikenSnd = (AudioClip)Resources.Load("Audio/ShurikenSnd");
 		shurikenPrefab = (GameObject)Resources.Load("Prefabs/EnemyShuriken");
         warpSnd = (AudioClip)Resources.Load("Audio/Warp");
@@ -58,13 +63,15 @@ public class Miniboss : MonoBehaviour
         dist = Vector2.Distance(player.transform.position, transform.position);
         enemy_localscale = transform.localScale;
         if (checkShouldFollow(dist)) {
+            //StartCoroutine("teleport");
             if (Time.time > nextWarp) {
                 tp_func();
             }
-            if (checkShouldAttack(dist) && Time.time > nextAttack) {
+            else if (checkShouldAttack(dist) && Time.time > nextAttack) {
                 StartCoroutine("attack");
             }
             else {
+                // Player is in front of the enemy.
                 if (shouldFollow) StartCoroutine("follow");
                 
                 if (isFollowing) {
@@ -83,10 +90,12 @@ public class Miniboss : MonoBehaviour
                 } 
             }
         } else {
-            _animator.SetBool("Following", false);
+            //_animator.SetBool("Following", false);
+            //_collider.enabled = true;
             isFollowing = false;
             shouldFollow = true;
         }
+        // transform.localScale = enemy_localscale;
         if(enemyHP <= 0)
         {
             die();
@@ -111,9 +120,12 @@ public class Miniboss : MonoBehaviour
     IEnumerator follow()
     {   
         shouldFollow = false;
+        //noticed.enabled = true;
         yield return new WaitForSeconds(0.5f);
-        _animator.SetBool("Following", true);
+        //_collider.enabled = false; 
+        //_animator.SetBool("Following", true);
         isFollowing = true;
+        //noticed.enabled = false;
         yield return null;
     }
 
@@ -121,15 +133,22 @@ public class Miniboss : MonoBehaviour
     IEnumerator attack() {
         _audioSource.PlayOneShot(shurikenSnd);
         GameObject newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
-        if (player.transform.position.x < transform.position.x) {
-            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(-shurikenForce, 0));
-        }
-        else{
-            newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce, 0));
-        }
-       
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(-shurikenForce, 0)); //left
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity); 
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(-shurikenForce, -shurikenForce)); //lower left
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -shurikenForce));//down
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce, 0)); //right
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity); 
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(shurikenForce, shurikenForce)); //upper right
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+        newShuriken.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, shurikenForce));//up
+        newShuriken = Instantiate(shurikenPrefab, transform.position, Quaternion.identity);
+
+
         nextAttack = Time.time + attackCooldown;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         yield return null;
     }
 
@@ -145,6 +164,8 @@ public class Miniboss : MonoBehaviour
     }
 
     private void tp_func(){
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, 0);
+        _rigidbody.AddForce(new Vector2(0, 550));
         _audioSource.PlayOneShot(warpSnd);
         GameObject newSmoke = Instantiate(smokerPrefab, transform.position, Quaternion.identity);
         if(player.transform.position.x < transform.position.x){

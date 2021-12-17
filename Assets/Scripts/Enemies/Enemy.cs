@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
     {
         dist = Vector2.Distance(player.transform.position, transform.position);
         enemy_localscale = transform.localScale;
+        Debug.Log(transform.localScale);
         if (checkShouldFollow(dist)) {
             if (checkShouldAttack(dist) && Time.time > nextAttack) {
                 attack();
@@ -76,12 +77,16 @@ public class Enemy : MonoBehaviour
         // Player is in front of the enemy.
         if (player.transform.position.x < transform.position.x) {
             this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-            enemy_localscale.x = Math.Abs(enemy_localscale.x);
+            if (transform.localScale.x < 1){
+                    transform.localScale *= new Vector2(-1, 1);
+            }
         }
         // Player is behind the enemy.
         if (player.transform.position.x > transform.position.x) {
             this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-            enemy_localscale.x = -Math.Abs(enemy_localscale.x);
+            if (transform.localScale.x > 1){
+                    transform.localScale *= new Vector2(-1, 1);
+            }
         }
     }
 

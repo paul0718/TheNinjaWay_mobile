@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
         float timer = 0;
         while (timer < 0.5){
             timer += Time.deltaTime;
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, 10));
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, 5));
         }
         PublicVars.knockback = false;
         //GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);

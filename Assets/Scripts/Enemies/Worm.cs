@@ -57,15 +57,18 @@ public class Worm : MonoBehaviour
             else {
                 // Player is in front of the enemy.
                 if (shouldFollow) StartCoroutine("follow");
-                
                 if (isFollowing) {
                     if (player.transform.position.x < transform.position.x) {
                         this.transform.position += new Vector3(-speed * Time.deltaTime, 0f, 0f);
-                        enemy_localscale.x = Math.Abs(enemy_localscale.x);
+                        if (enemy_localscale.x < 1){
+                            transform.localScale *= new Vector2(-1, 1);
+                        }
                     }
                     if (player.transform.position.x > transform.position.x) {
                         this.transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-                        enemy_localscale.x = -Math.Abs(enemy_localscale.x);
+                        if (enemy_localscale.x > 1){
+                            transform.localScale *= new Vector2(-1, 1);
+                        }
                     }
                 } 
             }
@@ -116,7 +119,7 @@ public class Worm : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _audioSource.PlayOneShot(hitSnd);
         //player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100);
-        StartCoroutine(player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*100));
+        StartCoroutine(player.GetComponent<Player>().getHit((player.transform.position.x - transform.position.x)*10));
         FindObjectOfType<HP>().loseHealth(damage);
         //player_rb.AddForce(new Vector2(, 350));
         yield return null;
