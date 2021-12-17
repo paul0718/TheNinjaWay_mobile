@@ -9,8 +9,8 @@ public class Warp_Btn : MonoBehaviour
     //Rigidbody2D player_rigid;
 
 
-    public Image warpActive;
-    public Image warpInactive;
+    public GameObject warpActive;
+    public GameObject warpInactive;
     public float distance = 10;
     public GameObject smokerPrefab;
     public Transform smokeSpawnPos;
@@ -34,18 +34,25 @@ public class Warp_Btn : MonoBehaviour
         warpSnd = (AudioClip)Resources.Load("Audio/Warp"); // add file "slowSnd" to Resources/Audio
         smokerPrefab = (GameObject)Resources.Load("Prefabs/Smoke");
         smokeSpawnPos = GameObject.FindWithTag("Feet").transform;
+
+        warpActive = GameObject.Find("WarpActive");
+        warpInactive = GameObject.Find("WarpInactive");
 	}
 
     void Update(){
         // CheckMoveDirection();
         if(Time.time > nextWarp)
         {
-            warpActive.gameObject.SetActive(true);
-            warpInactive.gameObject.SetActive(false);
+            // warpActive.gameObject.SetActive(true);
+            // warpInactive.gameObject.SetActive(false);
+            warpActive.SetActive(true);
+            warpInactive.SetActive(false);
         } 
         else {
-            warpActive.gameObject.SetActive(false);
-            warpInactive.gameObject.SetActive(true);
+            // warpActive.gameObject.SetActive(false);
+            // warpInactive.gameObject.SetActive(true);
+            warpActive.SetActive(false);
+            warpInactive.SetActive(true);
         }
     }
 
