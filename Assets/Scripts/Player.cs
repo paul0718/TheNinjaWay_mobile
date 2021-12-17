@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         //virtual_js = (Joystick)Resources.Load("Prefabs/Joystick");
+        hp = FindObjectOfType<HP>();
     }
 
     void FixedUpdate()
