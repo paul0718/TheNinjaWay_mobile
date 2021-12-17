@@ -144,11 +144,6 @@ MonoBehaviour:
   cutPrefab: {fileID: 0}
   timer: 0
   blade_interval: 60
-  attackPt: {fileID: 0}
-  meleeRadius: 2
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!82 &3988752837440093853
 AudioSource:
   m_ObjectHideFlags: 0

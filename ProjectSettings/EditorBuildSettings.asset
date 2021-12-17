@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 798fa338bcfddd547806ff4aec518ec2
-<<<<<<< HEAD
-  - enabled: 0
-=======
   - enabled: 1
     path: Assets/Scenes/0.unity
     guid: 1287a8d53c3d94805b0a78f1c126e503
@@ -51,22 +48,24 @@ EditorBuildSettings:
     path: Assets/Scenes/TEST_SCENE.unity
     guid: d846072f2a8452449b71cd9c66c99323
   - enabled: 1
->>>>>>> 6436065c0a36d4391310ff12d16cd1cb151636b2
     path: Assets/Scenes/oldLevel1-1.unity
     guid: 295b8ab8897ab18488767b9bc9141e92
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/oldLevel1-2.unity
     guid: d956c046617be5e4bbb40bbde8969160
   - enabled: 1
+    path: Assets/Resources/Sprites/oldBlocks/SwampHouse.unity
+    guid: a5c65d529dbc44d7080a0219cd1eb04d
+  - enabled: 1
+    path: Assets/Resources/Sprites/oldBlocks/SwagChamber.unity
+    guid: 14105f3756506452799ab33aad62dd9d
+  - enabled: 1
     path: Assets/Scenes/2-1.unity
     guid: 30531db8b90e8e24583b273990e2c848
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/2-2.unity
     guid: 83a77c3ca46ff804b88fbdcdfe8652f8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/3.unity
     guid: 64a1ebc2dbe027845a8f292c1c24d511
-  - enabled: 1
-    path: Assets/Scenes/LvlLoader.unity
-    guid: e4791b9c90a5bc1418ff5e67f62218a8
   m_configObjects: {}
