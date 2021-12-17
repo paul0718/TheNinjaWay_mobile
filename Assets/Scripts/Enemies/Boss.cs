@@ -86,7 +86,7 @@ public class Boss : MonoBehaviour
 
     private void attack()
     {
-        _audioSource.PlayOneShot(shootSnd);//?
+        //_audioSource.PlayOneShot(shootSnd);//?
         GameObject newHook = Instantiate(hookPrefab, transform.position, Quaternion.identity);
         newHook.GetComponent<Rigidbody2D>().AddForce(new Vector2(hookForce * (-transform.localScale.x), 0));
 
