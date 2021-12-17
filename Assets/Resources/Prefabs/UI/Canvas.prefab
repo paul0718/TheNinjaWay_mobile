@@ -328,6 +328,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9016120802630743871}
     m_Modifications:
+    - target: {fileID: 2630603271950690471, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630603271950690471, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630603271982195618, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630603271982195618, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
+      propertyPath: m_Color.g
+      value: 0.192265
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630603271982195618, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
+      propertyPath: m_Color.r
+      value: 0.18583126
+      objectReference: {fileID: 0}
     - target: {fileID: 2630603272413817184, guid: 79fc224fd9971194cbd8f10487b85945, type: 3}
       propertyPath: m_Name
       value: Game Over
