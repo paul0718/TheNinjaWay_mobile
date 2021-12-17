@@ -17,6 +17,7 @@ public class Portal_Close : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(GameObject.Find(object_to_find));
         if (!GameObject.Find(object_to_find)){
             portal.SetActive(true);
         }
