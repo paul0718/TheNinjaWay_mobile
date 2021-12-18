@@ -5304,10 +5304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: Ninjas these days. No respect.
-  x1: 450
-  y1: 350
-  x2: 200
-  y2: 25
+  x1: 1200
+  y1: 750
+  x2: 600
+  y2: 55
 --- !u!212 &246343136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8398,10 +8398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: These are PRIVATE bathing chambers! Leave immediately!
-  x1: 150
-  y1: 350
-  x2: 450
-  y2: 25
+  x1: 500
+  y1: 750
+  x2: 1100
+  y2: 55
 --- !u!212 &445512715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9928,7 +9928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0.000000022305606, z: 0, w: 1}
-  m_LocalPosition: {x: -124.28667, y: -0.79, z: -10}
+  m_LocalPosition: {x: -124.84398, y: -0.79, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791339158}
@@ -14426,10 +14426,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: Wanna join? What? It can't hurt to ask!
-  x1: 650
-  y1: 400
-  x2: 250
-  y2: 25
+  x1: 1500
+  y1: 750
+  x2: 700
+  y2: 55
 --- !u!212 &706137254
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -9674,7 +9674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0.000000022305606, z: 0, w: 1}
-  m_LocalPosition: {x: -124.28667, y: -0.79, z: -10}
+  m_LocalPosition: {x: -125.0171, y: -0.79, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1791339158}
@@ -23027,10 +23027,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog: OH GREAT HEAVENS! What are you doing here....? Leave at once!
-  x1: 450
-  y1: 300
-  x2: 450
-  y2: 25
+  x1: 1000
+  y1: 750
+  x2: 1300
+  y2: 55
 --- !u!61 &1138423916
 BoxCollider2D:
   m_ObjectHideFlags: 0

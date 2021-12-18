@@ -6,6 +6,8 @@ public class textBox : MonoBehaviour
 {
     public string dialog;
     private bool showGUI = false;
+    public Font font;
+    public int size;
     public int x1;
     public int y1;
     public int x2;
@@ -24,6 +26,7 @@ public class textBox : MonoBehaviour
     }
 
     void OnGUI() {
+        GUI.skin.box.fontSize = 40;
         if(showGUI){
             GUI.Box(new Rect(x1,y1,x2,y2), dialog);
         }
