@@ -101,7 +101,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -126,6 +126,7 @@ MonoBehaviour:
   shootSnd: {fileID: 0}
   hookPrefab: {fileID: 3419015387103202460, guid: ec49af8c12be4334d8ec2deacf4579e6, type: 3}
   hookForce: 800
+  hitSnd: {fileID: 0}
 --- !u!60 &622007406509052420
 PolygonCollider2D:
   m_ObjectHideFlags: 0
